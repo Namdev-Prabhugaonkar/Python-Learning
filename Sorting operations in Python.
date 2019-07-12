@@ -1,0 +1,35 @@
+# This is my shopping list
+shoplist = ['apple', 'mango', 'carrot', 'banana']
+
+print('I have', len(shoplist), 'items to purchase.')
+
+print('These items are:')
+for item in shoplist:
+    print(item)
+
+print ('I want to add more items to the list')
+shoplist.append("papaya")
+
+print ('My shopping list is now',shoplist)
+
+for item in shoplist:
+    print(item)
+
+print ('The sorted list is:')
+shoplist.sort()
+print ('The sorted list is:')
+for item in shoplist:
+    print(item)
+
+print('Now i want to remove banana from the list')
+shoplist.remove("banana")
+
+print('The new list is:')
+for item in shoplist:
+    print(item)
+
+print('Deleting the second item from the list')
+del shoplist[1]
+print('The new list is:')
+for item in shoplist:
+    print(item)
