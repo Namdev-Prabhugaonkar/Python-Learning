@@ -1,0 +1,38 @@
+#learning dictionary in Python
+
+address_book={'Swaroop':'swaroop@gmail.com',
+              'Prakash':'Prakasg@gmail.com',
+              'Sanjay':'Sanjay@rediffmail.com',
+              'Ajay':'Ajay@gmail.com',
+              'Spammer':'Spammer@spammer.com'}
+
+print'Ajays email address is:',address_book['Ajay']
+print'Sanjays email address is:',address_book['Sanjay']
+
+print'There are {} entries in the address book',len(address_book)
+
+print'Deleting a spammer from the address book'
+del address_book['Spammer']
+
+print'There are {} entries in the address book after deleting spammer.'.format(len(address_book))
+
+for name,address in address_book.items():
+    print ('Contact name {} has email address {}'.format(name,address))
+
+print'Adding an entry into the addressbook'
+address_book['Daya']='Daya@gmail.com'
+
+print'There are {} entries into the addres book'.format(len(address_book))
+
+for name,address in address_book.items():
+    print 'Contact name {} has email address {}'.format(name,address)
+
+if 'Sujay' in address_book:
+    print 'Email id of Sujay is:',address_book['Sujay']
+else:
+    print 'Sujay is not present in addressbook'
+
+if 'Daya' in address_book:
+    print 'Email id of Daya is:',address_book['Daya']
+else:
+    print 'Daya is not present in addressbook'
