@@ -1,0 +1,21 @@
+#learning sequences in Python
+fruit_list=['Banana','Apple','Oranges','Watermelon']
+string_name='Hrishikesh'
+print'The list of fruit is:',fruit_list
+
+print'There are {} items in the list'.format(len(fruit_list))
+# Indexing or 'Subscription' operation #
+print'Item 1 in the list is:',fruit_list[0]
+print 'Last item in the list is:',fruit_list[-1]
+
+print'There are {} characters in the name list',format(len(string_name))
+print"The first and the last character in the name is {} and the last character is {}".format(string_name[0],string_name[-1])
+
+# Slicing on a list and string #
+print'Item 1 to 3 is',fruit_list[0:3]
+print'Characters 1 to 3 is',string_name[0:3]
+
+if string_name.find('Hri') != -1:
+    print "true"
+else:
+    print 'false'
